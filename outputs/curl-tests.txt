@@ -1,1 +1,27 @@
+# Curl Test Results - Load Balancer Verification
 
+Load Balancer IP:
+34.160.154.86
+
+--------------------------------------------------
+
+Test 1:
+$ curl http://34.160.154.86
+Page served from: lb-backend-group-f29p
+
+--------------------------------------------------
+
+Test 2:
+$ curl http://34.160.154.86
+Page served from: lb-backend-group-xhbd
+
+--------------------------------------------------
+
+Test 3:
+$ curl http://34.160.154.86
+Page served from: lb-backend-group-f29p
+
+--------------------------------------------------
+
+Observation:
+Traffic is being distributed across multiple backend instances, confirming that the load balancer is working correctly.
